@@ -1,0 +1,12 @@
+<h1>Welcome to Are you Hungry?</h1>
+
+<a href="/restaurants/new">Add a restaurant</a>
+<h2>Your restaurants:</h2>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <a href="/restaurants/<%= restaurant.id %>">Name: <%= restaurant.name %></a>
+    </li>
+  <% end %>
+</ul>
